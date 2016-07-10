@@ -41,7 +41,7 @@ class Config extends \Kotchasan\Config
    */
   public $color_status = array(
     0 => '#0000CC',
-    1 => '#FFCC00'
+    1 => '#CC0000'
   );
   /**
    * กำหนดอายุของแคช (วินาที)
@@ -64,7 +64,7 @@ class Config extends \Kotchasan\Config
   public $web_title = 'Kotchasan';
   /**
    * admin template
-   * 
+   *
    * @var string
    */
   public $skin = 'admin';

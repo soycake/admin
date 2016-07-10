@@ -127,7 +127,7 @@ class View extends \Kotchasan\View
    */
   public function onRow($item, $o, $prop)
   {
-    $item['status'] = isset(self::$cfg->member_status[$item['status']]) ? self::$cfg->member_status[$item['status']] : 'Unknow';
+    $item['status'] = isset(self::$cfg->member_status[$item['status']]) ? '<span class=status'.$item['status'].'>'.self::$cfg->member_status[$item['status']].'</span>' : 'Unknow';
     $item['lastvisited'] = Date::format($item['lastvisited'], 'd M Y H:i').' ('.number_format($item['visited']).')';
     return $item;
   }
